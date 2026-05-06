@@ -2,7 +2,7 @@
   "name": "team-task-manager",
   "version": "1.0.0",
   "scripts": {
-    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "install-all": "cd backend && npm install --include=dev && cd ../frontend && npm install --include=dev",
     "build-frontend": "cd frontend && npm run build",
     "start": "cd backend && node server.js",
     "railway-build": "npm run install-all && npm run build-frontend"
